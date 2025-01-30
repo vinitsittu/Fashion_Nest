@@ -1,24 +1,25 @@
 {
   "name": "web-development",
   "version": "1.0.0",
-  "description": "",
   "main": "fashion_mysql.js",
   "scripts": {
     "start": "node fashion_mysql.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vinitsittu/Fashion_Nest.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vinitsittu/Fashion_Nest/issues"
-  },
-  "homepage": "https://github.com/vinitsittu/Fashion_Nest#readme",
   "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.5",
+    "open": "^10.1.0",
     "web-development": "file:"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
