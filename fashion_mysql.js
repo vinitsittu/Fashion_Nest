@@ -82,10 +82,13 @@ app.post('/login', async (req, res) => {
         res.status(500).json({ success: false, error: 'Server error' });
     }
 });
+app.listen(9000, '0.0.0.0', () => console.log('Server is running on port 9000'));
+
+
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+// app.listen(port, () => {
+//     console.log(`Server is running on http://localhost:${port}`);
 
     // Auto-open only if running locally
     // if (process.env.NODE_ENV !== 'production') {
@@ -103,4 +106,4 @@ app.listen(port, () => {
     //         }
     //     });
     // }
-});
+
